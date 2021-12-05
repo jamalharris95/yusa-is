@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="yusa-counter.js"></script>
+    <link rel="stylesheet" href="yusa-style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="yusa-kutu">
+      <p class="ltc-text" font>Mined LTC</p>
+      <p id="ltc-mined">10</p>
+      <p class="doge-text">Mined Doge</p>
+      <p id="doge-mined">2.5</p>
+      <script type="text/javascript">
+        const timerText = document.getElementById("ltc-mined");
+        let count = 10;
+
+        setInterval(function () {
+          console.log("Yuşa ne işlere soktun bizi");
+          count += 1;
+          timerText.textContent = count;
+        }, 1000);
+      </script>
+      <script type="text/javascript">
+        const timerTextDoge = document.getElementById("doge-mined");
+        let countdoge = 2.5;
+
+        setInterval(function () {
+          console.log("Yuşa ne işlere soktun bizi");
+          countdoge += 0.3;
+          timerTextDoge.textContent = countdoge;
+        }, 1000);
+      </script>
+    </div>
+  </body>
+</html>
